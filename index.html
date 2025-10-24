@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online API Client - Test & Analyze REST/HTTP Requests</title>
+    <meta name="description" content="A powerful, free online API client for testing GET, POST, PUT, DELETE requests. Analyze JSON responses, manage headers, auth, and payloads with an intuitive interface. No installation required." />
+    <meta name="keywords" content="api client, rest client, http client, postman alternative, insomnia alternative, api testing, json viewer, http request, rest api, online tool, developer tool" />
+    <meta property="og:title" content="Online API Client - Test & Analyze REST/HTTP Requests" />
+    <meta property="og:description" content="A powerful, free online API client for testing GET, POST, PUT, DELETE requests. Analyze JSON responses, manage headers, auth, and payloads with an intuitive interface." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Online API Client - Test & Analyze REST/HTTP Requests" />
+    <meta name="twitter:description" content="A powerful, free online API client for testing GET, POST, PUT, DELETE requests. Analyze JSON responses, manage headers, auth, and payloads with an intuitive interface." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: '#f8fafc', // slate-50
+              foreground: '#0f172a', // slate-900
+              primary: '#4f46e5', // indigo-600
+              'primary-hover': '#4338ca', // indigo-700
+              'primary-foreground': '#ffffff',
+              muted: '#f1f5f9', // slate-100
+              'muted-foreground': '#64748b', // slate-500
+              border: '#e2e8f0', // slate-200
+              card: '#ffffff',
+            },
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-background text-foreground">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

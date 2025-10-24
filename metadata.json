@@ -1,0 +1,5 @@
+{
+  "name": "Online API Client",
+  "description": "A powerful, free online API client for testing GET, POST, PUT, DELETE requests. Analyze JSON responses, manage headers, authentication, and payloads with an intuitive, resizable interface. No installation required.",
+  "requestFramePermissions": []
+}
