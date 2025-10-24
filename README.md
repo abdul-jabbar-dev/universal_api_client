@@ -76,7 +76,7 @@ If you plan to tweak the source code and run it locally, you'll need to follow t
 
 Grab the Code:
 
-git clone [https://github.com/your-repo/universal-api-client.git](https://github.com/your-repo/universal-api-client.git)
+git clone [[https://github.com/your-repo/universal-api-client.git](https://github.com/abdul-jabbar-dev/universal_api_client.git)]([https://github.com/your-repo/universal-api-client.git](https://github.com/abdul-jabbar-dev/universal_api_client.git))
 cd universal-api-client
 
 
