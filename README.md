@@ -38,79 +38,70 @@ Start by typing the API endpoint URL into the main bar. Then, just use the dropd
 
 Use the tabs below the URL bar to configure everything else:
 
-Params: Add your query parameters here; they’ll automatically get slapped onto the end of the URL.
-
-Auth: If you need a token, drop that Bearer Token right here. Easy!
-
-Headers: Got any special headers your API requires? Add them here.
+- **Params:** Add your query parameters here; they’ll automatically get slapped onto the end of the URL.
+- **Auth:** If you need a token, drop that Bearer Token right here. Easy!
+- **Headers:** Got any special headers your API requires? Add them here.
 
 3. Build the Data (if you need to)
 
 For requests like POST or PUT, the Body tab is where you define the payload:
 
-form-data: Great for submitting form data and files.
-
-raw: Use this for plain JSON or other data types. Don't forget to use the Format button if your JSON gets messy!
+- **form-data:** Great for submitting form data and files.
+- **raw:** Use this for plain JSON or other data types. Don't forget to use the Format button if your JSON gets messy!
 
 4. See What You Got!
 
 Click the Send button, and bam! The response appears instantly on the right.
 
-Metrics: Quickly check the status code, time, and size.
-
-Body Tab: Your response body lives here, and if it's JSON, it's already beautifully formatted and color-coded.
-
-Headers/Cookies: Easily inspect all the stuff the server sent back in the headers and cookies.
+- **Metrics:** Quickly check the status code, time, and size.
+- **Body Tab:** Your response body lives here, and if it's JSON, it's already beautifully formatted and color-coded.
+- **Headers/Cookies:** Easily inspect all the stuff the server sent back in the headers and cookies.
 
 ⚙️ Installation & Setup (How to get started)
 
 Since this is a web-based tool, there's no install needed for just using it!
 
-For Regular Users (The easy way)
+#### For Regular Users (The easy way)
 
-Simply open the index.html file in any modern web browser. That’s seriously it!
+Simply open the `index.html` file in any modern web browser. That’s seriously it!
 
-For Developers (Want to mess with the code?)
+#### For Developers (Want to mess with the code?)
 
-If you plan to tweak the source code and run it locally, you'll need to follow the standard development steps. You'll need Node.js installed, by the way!
+If you plan to tweak the source code and run it locally, you'll need to follow the standard development steps. You'll need Node.js and npm installed, by the way!
 
-Grab the Code:
+1.  **Grab the Code:**
+    ```bash
+    git clone https://github.com/abdul-jabbar-dev/universal_api_client.git
+    cd universal_api_client
+    ```
 
-git clone [[https://github.com/your-repo/universal-api-client.git](https://github.com/abdul-jabbar-dev/universal_api_client.git)]([https://github.com/your-repo/universal-api-client.git](https://github.com/abdul-jabbar-dev/universal_api_client.git))
-cd universal-api-client
+2.  **Install the Stuff:**
+    This installs the local development server:
+    ```bash
+    npm install
+    ```
 
+3.  **Fire Up the Server:**
+    To run the project locally, kick off the development server:
+    ```bash
+    npm start
+    ```
 
-Install the Stuff:
+4.  Open your browser and navigate to the local address it gives you (usually something like `http://localhost:3000`). Have fun!
 
-Time to install all the necessary packages:
-
-npm install
-
-
-Fire Up the Server:
-
-To run the project locally, kick off the development server:
-
-npm run dev
-# Sometimes it's npm start, depending on the setup.
-
-
-Open your browser and navigate to the local address (usually something like http://localhost:5173 or http://localhost:3000). Have fun!
 
 🛠️ Tech Stack (What's under the hood?)
 
 This project was built using some great modern tools:
 
-React: For building that nice, snappy UI.
-
-TypeScript: Keeps our code clean and reliable with static typing.
-
-Tailwind CSS: For super-fast, utility-first styling.
-
-No messy Build Tools: We skipped the heavy bundlers like Webpack or Vite! It runs straight off ES modules and an importmap, which is why it's quick and lightweight!
+- **React:** For building that nice, snappy UI.
+- **TypeScript:** Keeps our code clean and reliable with static typing.
+- **Tailwind CSS:** For super-fast, utility-first styling.
+- **No messy Build Tools:** We skipped the heavy bundlers like Webpack or Vite! It runs straight off ES modules and an importmap, which is why it's quick and lightweight!
 
 📁 File Structure (Where everything lives)
 
+```
 /
 ├── components/         # All our reusable React parts live here!
 │   ├── icons/          # SVG icon components
@@ -122,3 +113,4 @@ No messy Build Tools: We skipped the heavy bundlers like Webpack or Vite! It run
 ├── index.tsx           # Where React gets mounted to the page
 ├── types.ts            # All the TypeScript types
 └── README.md           # This very document you're reading!
+```
