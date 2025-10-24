@@ -10,13 +10,11 @@ Seriously, this thing is awesome. It’s a totally free and super-fast API clien
 
 🛠️ Easy-Peasy Setup: Setting up your request URL, parameters, and headers is a total breeze. It’s super intuitive.
 
-🔑 Token Power: The dedicated 'Auth' tab is just for your Bearer Tokens. Drop it in, and you're good to go—we handle the messy Authorization header for you!
-
 📝 Flexible Payloads: Need to send data? We've got two great ways:
 
-form-data: Perfect for web forms. You can send text fields and even upload files!
+- form-data: Perfect for web forms. You can send text fields and even upload files!
 
-raw: Gives you complete control for sending JSON, XML, or any text.
+- raw: Gives you complete control for sending JSON, XML, or any text.
 
 💡 Smart JSON Helper: We validate your JSON live while you type! Plus, you can pretty-print it instantly or Import a file from your computer. So handy!
 
