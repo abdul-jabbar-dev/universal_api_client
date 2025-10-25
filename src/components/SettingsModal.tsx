@@ -47,7 +47,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, onSave, 
   ];
 
   const renderColorInput = (field: { key: keyof ColorSettings; label: string }) => (
-    <div key={field.key} className="flex items-center justify-between">
+    <div key={field.key} className="flex items-center justify-between ">
       <label htmlFor={field.key} className="text-sm text-foreground">{field.label}</label>
       <div className="relative flex items-center space-x-2">
         <span className="font-mono text-sm text-muted-foreground">{settings.colors[field.key]}</span>
@@ -74,7 +74,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, onSave, 
   );
 
   return (
-    <div className="fixed inset-0 bg-black/30 flex items-center justify-center z-50 backdrop-blur-sm" onClick={onClose}>
+    <div className="fixed inset-0 bg-black/30 flex w-full scroll-y-auto h-full overflow-y-auto items-center justify-center z-50 backdrop-blur-sm" onClick={onClose}>
       <div className="bg-card rounded-lg shadow-xl p-6 w-full max-w-lg border border-border" onClick={(e) => e.stopPropagation()}>
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-xl font-semibold">Settings</h2>
