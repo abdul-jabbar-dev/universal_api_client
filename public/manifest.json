@@ -1,0 +1,20 @@
+
+{
+  "manifest_version": 3,
+  "name": "Your Project Name",
+  "version": "1.0",
+  "description": "A description of your new React extension.",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon16.png" 
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icons48.png",
+    "128": "icons96.png"
+  },
+  "permissions": [],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import type { HttpMethod, KeyValue, BodyType, FormDataEntry, AppSettings } from '../types';
+import type { HttpMethod, KeyValue, BodyType, FormDataEntry, AppSettings } from '../../types';
 import PlusIcon from './icons/PlusIcon';
 import TrashIcon from './icons/TrashIcon';
 import UploadIcon from './icons/UploadIcon';

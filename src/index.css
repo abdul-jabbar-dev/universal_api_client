@@ -1,0 +1,52 @@
+/* src/index.css */
+
+/* ⚡️ তোমার কাস্টম কালার CSS ভেরিয়েবল হিসেবে সেট করা হচ্ছে ⚡️ */
+:root {
+  /* BACKGROUNDS & FOREGROUNDS */
+  --color-background: #f8fafc;
+  --color-foreground: #0f172a;
+
+  /* PRIMARY */
+  --color-primary: #4f46e5;
+  --color-primary-hover: #4338ca;
+  --color-primary-foreground: #ffffff;
+
+  /* MUTED */
+  --color-muted: #f1f5f9;
+  --color-muted-foreground: #64748b;
+
+  /* OTHER */
+  --color-border: #e2e8f0;
+  --color-card: #ffffff;
+}
+
+/* Tailwind Directives (must be present) */
+ 
+body { 
+            min-width: 400px; /* আপনার প্রয়োজন অনুযায়ী পিক্সেল মান পরিবর্তন করতে পারেন */
+        }
+.bg-background { background-color: var(--color-background) !important; }
+.text-foreground { color: var(--color-foreground) !important; }
+
+.bg-primary { background-color: var(--color-primary) !important; }
+.hover\:bg-primary-hover:hover { background-color: var(--color-primary-hover) !important; }
+.text-primary-foreground { color: var(--color-primary-foreground) !important; }
+
+.bg-muted { background-color: var(--color-muted) !important; }
+.text-muted-foreground { color: var(--color-muted-foreground) !important; }
+
+.border-border { border-color: var(--color-border) !important; }
+.bg-card { background-color: var(--color-card) !important; }
+.text-primary { color: var(--color-primary) !important; }
+.text-muted-foreground { color: var(--color-muted-foreground) !important; }
+
+
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* এরপর থেকে তুমি এই ভেরিয়েবলগুলো ব্যবহার করতে পারবে */
+.custom-border {
+  border: 1px solid var(--color-border);
+}
+

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import type { ApiResponse, AppSettings, Cookie } from '../types';
+import type { ApiResponse, AppSettings, Cookie } from '../../types';
 import Loader from './Loader';
 import DownloadIcon from './icons/DownloadIcon';
 
