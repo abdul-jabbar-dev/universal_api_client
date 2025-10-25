@@ -261,71 +261,7 @@ const App: React.FC = () => {
                     </div>
                 </main>
 
-                <footer className="py-12 lg:py-20 px-4 md:px-8 border-t border-border bg-muted text-muted-foreground flex-shrink-0">
-                    <div className="max-w-7xl mx-auto space-y-12 lg:space-y-20">
-                        <div className="space-y-6">
-                            <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-6">A Smarter Way to Test Your APIs</h3>
-                            <p className="text-base lg:text-lg max-w-3xl">
-                                This online API client is a free, powerful tool for developers. Craft and send any HTTP/REST request right from your browser.
-                                Perfect for testing, debugging, and exploring APIs without the need for heavy desktop applications like Postman or Insomnia.
-                            </p>
-                            <ol className="space-y-6 mt-10">
-                                <li className="flex">
-                                    <span className="bg-primary/10 text-primary font-bold rounded-full h-10 w-10 text-lg flex items-center justify-center mr-5 flex-shrink-0">1</span>
-                                    <div>
-                                        <h4 className="font-semibold text-foreground text-lg mb-1">Set Your Request</h4>
-                                        <p>Start by entering the API endpoint URL. Use the dropdown to select your HTTP method (`GET`, `POST`, `PUT`, `PATCH`, `DELETE`). The intuitive interface makes it easy to configure your initial request.</p>
-                                    </div>
-                                </li>
-                                <li className="flex">
-                                    <span className="bg-primary/10 text-primary font-bold rounded-full h-10 w-10 text-lg flex items-center justify-center mr-5 flex-shrink-0">2</span>
-                                    <div>
-                                        <h4 className="font-semibold text-foreground text-lg mb-1">Add Details: Params, Headers & Auth</h4>
-                                        <p>Fine-tune your request with dedicated tabs. Add query parameters, custom HTTP headers, and handle authentication with ease. For bearer tokens, simply paste your key in the 'Auth' tab, and we'll handle the `Authorization` header automatically.</p>
-                                    </div>
-                                </li>
-                                <li className="flex">
-                                    <span className="bg-primary/10 text-primary font-bold rounded-full h-10 w-10 text-lg flex items-center justify-center mr-5 flex-shrink-0">3</span>
-                                    <div>
-                                        <h4 className="font-semibold text-foreground text-lg mb-1">Build Your Request Body</h4>
-                                        <p>For `POST` or `PUT` requests, the 'Body' tab gives you full control. Send `form-data` with text or file uploads, or switch to the `raw` editor for JSON, XML, or any text-based payload. You can even import a JSON file directly, and our one-click formatter and validator ensures your data is perfect before sending.</p>
-                                    </div>
-                                </li>
-                                <li className="flex">
-                                    <span className="bg-primary/10 text-primary font-bold rounded-full h-10 w-10 text-lg flex items-center justify-center mr-5 flex-shrink-0">4</span>
-                                    <div>
-                                        <h4 className="font-semibold text-foreground text-lg mb-1">Analyze the Response</h4>
-                                        <p>Click 'Send' and see the API response instantly. The response panel provides crucial info: HTTP status, response time, and size. Browse the response body with customizable syntax highlighting for JSON, inspect headers, and view cookies—all in a clean, resizable layout.</p>
-                                    </div>
-                                </li>
-                            </ol>
-                        </div>
-                        <div className="space-y-6">
-                            <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-6">The Developer-Friendly REST Client</h3>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                <div className="bg-card border border-border p-6 rounded-lg">
-                                    <h4 className="font-semibold text-foreground text-lg mb-2">JSON and Form-Data Mastery</h4>
-                                    <p>Our REST client excels with complex payloads. Test file uploads using `multipart/form-data` or use the intelligent raw body editor with live JSON validation and a one-click formatter to prevent errors and improve readability.</p>
-                                </div>
-                                <div className="bg-card border border-border p-6 rounded-lg">
-                                    <h4 className="font-semibold text-foreground text-lg mb-2">Interactive & Responsive UI</h4>
-                                    <p>Get instant feedback as you build requests. The URL updates automatically with query params. The resizable panels allow you to focus on what matters most, whether it's the request configuration or the API response.</p>
-                                </div>
-                                <div className="bg-card border border-border p-6 rounded-lg">
-                                    <h4 className="font-semibold text-foreground text-lg mb-2">Personalized Viewing Experience</h4>
-                                    <p>Make the tool your own. The settings modal lets you customize colors for JSON syntax highlighting and adjust font sizes for both inputs and outputs. Your preferences are saved locally for a consistent experience.</p>
-                                </div>
-                                <div className="bg-card border border-border p-6 rounded-lg">
-                                    <h4 className="font-semibold text-foreground text-lg mb-2">Streamlined Authentication</h4>
-                                    <p>Authentication is simple with the dedicated 'Auth' tab. Currently supporting Bearer Tokens, it's designed to get you authenticated and sending requests fast, without cluttering your header configuration.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="text-center text-muted-foreground mt-12 lg:mt-16">
-                            <p>&copy; {new Date().getFullYear()} Online API Client. A lightweight, powerful tool for modern API testing.</p>
-                        </div>
-                    </div>
-                </footer>
+                 
                 <SettingsModal
                     isOpen={isSettingsOpen}
                     onClose={() => setIsSettingsOpen(false)}
