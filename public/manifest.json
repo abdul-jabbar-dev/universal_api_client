@@ -4,10 +4,9 @@
   "short_name": "API Client",
   "version": "1.0.0",
   "description": "A powerful and universal API testing client built with React and Tailwind CSS, perfect for quickly sending requests and viewing responses in your browser popup.",
-  "homepage_url": "https://[আপনার_ওয়েবসাইটের_URL_দিন].com/universal-api-client",
+  "homepage_url": "https://universalapi.netlify.app",
   "minimum_chrome_version": "100",
-  "author": "Abdul Jabbar",
-  // "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOC...",
+  "author": "Abdul Jabbar", 
   "action": {
     "default_popup": "index.html",
     "default_title": "Universal API Client",
